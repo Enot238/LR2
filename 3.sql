@@ -54,7 +54,7 @@ alter table product add foreign key(produser) references  produser(ID_produser) 
 			  
 
 
---                        ## 3 ## 
+--                        ## LR3 ## 
 --#1						
 alter table sales drop foreign key (ID_shopper);
 
@@ -72,6 +72,7 @@ alter table shopper add column sex varchar(10);
 alter table product add foreign key(category) references  category(ID_category) ;
 
 	
+
 
 
 
