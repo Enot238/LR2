@@ -1,4 +1,4 @@
-/*
+
 create table if not exists shopper (ID_shopper int generated always as identity primary key, --cтворюється таблиця Покупець з головним полем код покупця який автомаично заповнюється лічильником
     first_name varchar(44),
     last_name varchar(44),
@@ -105,7 +105,7 @@ delete from shopper
 
 delete from produser;
 	
-*/	
+
 
 
 
