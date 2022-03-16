@@ -1,4 +1,4 @@
-/*
+
 create table if not exists shopper (ID_shopper int generated always as identity primary key, --cтворюється таблиця Покупець з головним полем код покупця який автомаично заповнюється лічильником
     first_name varchar(44),
     last_name varchar(44),
@@ -171,7 +171,7 @@ select produser.name_produser, product.product_name,  product.price
 select produser.name_produser, product.product_name,  product.price 
 	from produser, product 
 		where produser.id_produser=product.produser and product.produser='10' ;
-*/
+
 
 
 
