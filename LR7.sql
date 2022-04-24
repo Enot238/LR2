@@ -47,7 +47,7 @@ select * from shopper where phone_shopper = '050' or phone_shopper = '066' or  p
 
 -- Вивести всіх виробників блоків живлення з їхнім товаром відсортованим по виробниках
 select produser.name_produser, category.category_name, produser.name_produser, product.product_name,product.price, product.description
-	from product, category,produser, 
+	from product, category,produser
 	 	where product.produser = produser.id_produser 
 		and product.category = id_category and product.category =6
 			order by produser.name_produser;
