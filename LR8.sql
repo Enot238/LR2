@@ -1,4 +1,3 @@
-
 --                        ## LR8 ##
 
 --Вивести перелік клієнтів відсортованих за прізвищем в алфавітному порядку
@@ -27,10 +26,9 @@ select product.product_name, category.category_name, product.price
 	from product, category where category.id_category = product.category
 	order by product_name,category ; 
 
-
-
 -- вивести продавців відсортованих за гендером 
-select * from seller order by sex;
+select first_name,last_name,sex,date_nar,salary from seller order by sex;
+
 
 
 --Вивести перелік працівників відсортованих за зарплатою в порядку спадання:
@@ -39,10 +37,8 @@ select first_name, last_name, sex, phone_seller from seller order by salary desc
 
 
 --Вивести перелік 2 (по даті народження) наймолодших продавців
-select*from seller order by date_nar DESC LIMIT 2;
+select first_name,last_name,sex,date_nar,salary from seller order by date_nar DESC LIMIT 2;
 
 
 --Вивести суму продажів по кожному дню.
 Select date_of_sale, SUM(purchase_amount) as "Sum" FROM sales GROUP BY date_of_sale;
-
-
