@@ -27,8 +27,8 @@ select  product_name, price, description from product where category=2 and price
 -- вивести всі товари категорії оперативна память відсортовані за ціною
 select product_name, price, description from product where category=3 order by price;
 
---вивести всіх продавців які проживають на Проспекті                 &&&&&
-select * from seller where address in('Prospect');
+--вивести всіх продавців які проживають на Проспекті          
+select * from seller where address like 'Prospect%';
 
 --вивести всі продажі за 2021-04-04
 select * from sales where date_of_sale = '2021-04-04';
@@ -41,8 +41,8 @@ select  produser.name_produser, product.product_name,product.price, product.desc
 select * from shopper where column_b not in ('Чернівці')
 
 
---Вивести всіх клієнтів в яких мобільним оператором є водафон                &&&&&
-select * from shopper where phone_shopper = '050' or phone_shopper = '066' or  phone_shopper = '095' or  phone_shopper = '099';
+--Вивести всіх клієнтів в яких мобільним оператором є водафон 
+select * from shopper where phone_shopper like '050%' or phone_shopper like '066%' or  phone_shopper like '095%' or  phone_shopper like '099%';
 
 
 -- Вивести всіх виробників блоків живлення з їхнім товаром відсортованим по виробниках
